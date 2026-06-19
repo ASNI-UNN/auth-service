@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserRepositoryAdapterIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserRepositoryAdapterIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.asni.auth.infrastructure.persistence.html">org.asni.auth.infrastructure.persistence</a> &gt; UserRepositoryAdapterIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.053s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">deleteById_removesUser()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">existsByEmail_returnsTrue()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">existsByUsername_returnsTrue()</td>
+<td class="success">0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findAll_returnsSavedUsers()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findByEmail_returnsUser()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findByUsername_returnsUser()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">save_andFindById_roundtrip()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">update_persistsChanges()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2026-05-27T16:34:19.623+03:00  INFO 3913 --- [auth-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.asni.auth.infrastructure.persistence.UserRepositoryAdapterIT]: UserRepositoryAdapterIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-27T16:34:19.636+03:00  INFO 3913 --- [auth-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.asni.auth.AuthServiceApplication for test class org.asni.auth.infrastructure.persistence.UserRepositoryAdapterIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-05-27T16:34:19.650+03:00  INFO 3913 --- [auth-service] [    Test worker] o.a.a.i.p.UserRepositoryAdapterIT        : Starting UserRepositoryAdapterIT using Java 21.0.9 with PID 3913 (started by kmuradoff in /Users/kmuradoff/Documents/diplom_anton/anton/auth-service)
+2026-05-27T16:34:19.650+03:00  INFO 3913 --- [auth-service] [    Test worker] o.a.a.i.p.UserRepositoryAdapterIT        : The following 1 profile is active: &quot;test&quot;
+2026-05-27T16:34:19.694+03:00  INFO 3913 --- [auth-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-27T16:34:19.694+03:00  INFO 3913 --- [auth-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27T16:34:19.701+03:00  INFO 3913 --- [auth-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2026-05-27T16:34:19.725+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.redis:7-alpine                        : Creating container for image: redis:7-alpine
+2026-05-27T16:34:19.782+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine is starting: 8c962e4a93d3198a4b66ed90547187b55cbd6af2353e018c3a2367df07559b5a
+2026-05-27T16:34:19.949+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine started in PT0.224377S
+2026-05-27T16:34:19.949+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.postgres:16-alpine                    : Creating container for image: postgres:16-alpine
+2026-05-27T16:34:19.981+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine is starting: 4243d2eaa6213c084a22326a02a0ed26208490761164a0cc6011cf871489dfc6
+2026-05-27T16:34:20.793+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.postgres:16-alpine                    : Container postgres:16-alpine started in PT0.843632S
+2026-05-27T16:34:20.794+03:00  INFO 3913 --- [auth-service] [    Test worker] tc.postgres:16-alpine                    : Container is started (JDBC URL: jdbc:postgresql://localhost:54524/test?loggerLevel=OFF)
+2026-05-27T16:34:20.866+03:00  INFO 3913 --- [auth-service] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:54524/test?loggerLevel=OFF (PostgreSQL 16.14)
+2026-05-27T16:34:20.875+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table &quot;public&quot;.&quot;flyway_schema_history&quot; does not exist yet
+2026-05-27T16:34:20.876+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
+2026-05-27T16:34:20.882+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2026-05-27T16:34:20.898+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2026-05-27T16:34:20.901+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - create users table&quot;
+2026-05-27T16:34:20.913+03:00  INFO 3913 --- [auth-service] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.007s)
+2026-05-27T16:34:20.923+03:00  INFO 3913 --- [auth-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-27T16:34:20.924+03:00  INFO 3913 --- [auth-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-27T16:34:20.929+03:00  INFO 3913 --- [auth-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27T16:34:20.929+03:00  INFO 3913 --- [auth-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-27T16:34:20.935+03:00  INFO 3913 --- [auth-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@9a2c163
+2026-05-27T16:34:20.935+03:00  INFO 3913 --- [auth-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-27T16:34:20.938+03:00  INFO 3913 --- [auth-service] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27T16:34:20.958+03:00  INFO 3913 --- [auth-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27T16:34:20.967+03:00  INFO 3913 --- [auth-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27T16:34:20.983+03:00  INFO 3913 --- [auth-service] [    Test worker] o.a.a.i.p.UserRepositoryAdapterIT        : Started UserRepositoryAdapterIT in 1.346 seconds (process running for 7.256)
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: insert into users (active,created_at,email,password_hash,role,updated_at,username,id) values (?,?,?,?,?,?,?,?)
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.username=? fetch first ? rows only
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.username=? fetch first ? rows only
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: insert into users (active,created_at,email,password_hash,role,updated_at,username,id) values (?,?,?,?,?,?,?,?)
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: insert into users (active,created_at,email,password_hash,role,updated_at,username,id) values (?,?,?,?,?,?,?,?)
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.email=?
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: insert into users (active,created_at,email,password_hash,role,updated_at,username,id) values (?,?,?,?,?,?,?,?)
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.username=?
+Hibernate: select ue1_0.id,ue1_0.active,ue1_0.created_at,ue1_0.email,ue1_0.password_hash,ue1_0.role,ue1_0.updated_at,ue1_0.username from users ue1_0 where ue1_0.id=?
+Hibernate: insert into users (active,created_at,email,password_hash,role,updated_at,username,id) values (?,?,?,?,?,?,?,?)
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.email=? fetch first ? rows only
+Hibernate: select ue1_0.id from users ue1_0 where ue1_0.email=? fetch first ? rows only
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.4</a> at May 27, 2026, 4:34:25 PM</p>
+</div>
+</div>
+</body>
+</html>
